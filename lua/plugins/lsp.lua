@@ -9,11 +9,12 @@ return {
             -- Setup Mason
             require("mason").setup()
             require("mason-lspconfig").setup({
-                ensure_installed = { "pyright" }
+                ensure_installed = { "pyright", "jdtls" }
             })
 
             -- Setup other LSP
             require("lspconfig").pyright.setup({})
+            require("lspconfig").jdtls.setup({})
         end,
     },
 }
