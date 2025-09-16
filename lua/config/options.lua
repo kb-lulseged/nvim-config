@@ -25,3 +25,6 @@ vim.opt.scrolloff = 8  -- Keep 8 lines visible when scrolling
 -- Essential for coding
 vim.opt.undofile = true  -- Persistent undo
 vim.opt.swapfile = false  -- Less clutter over SSH
+
+-- LSP diagnostic keybindings
+vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagnostic" })
